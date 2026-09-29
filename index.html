@@ -31,14 +31,21 @@
         .wix-site {
             position: absolute;
 
-            /* Move the Wix page upward by the banner height */
+            /* Move the Wix page upward to hide the 30px Wix banner */
             top: -30px;
             left: 0;
 
-            width: 100%;
+            /*
+             * Make the iframe slightly wider than the visible window.
+             * This pushes the Wix scrollbar off-screen so it gets clipped.
+             */
+            width: calc(100% + 20px);
 
-            /* Add the cropped height back at the bottom */
-            height: calc(100% + 25px);
+            /*
+             * Add the cropped 30px back at the bottom
+             * so the Wix site still fills the whole screen.
+             */
+            height: calc(100% + 30px);
 
             border: 0;
             margin: 0;
