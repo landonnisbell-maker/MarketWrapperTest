@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
 
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Medieval Marketplace</title>
+
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .site-window {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .wix-site {
+            position: absolute;
+
+            /* Move the Wix page upward by the banner height */
+            top: -25px;
+            left: 0;
+
+            width: 100%;
+
+            /* Add the cropped height back at the bottom */
+            height: calc(100% + 25px);
+
+            border: 0;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="site-window">
+        <iframe
+            class="wix-site"
+            src="https://YOUR-WIX-URL-HERE"
+            title="Medieval Marketplace"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+</body>
+</html>
